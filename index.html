@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book List App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <h1>📚 My Book List</h1>
+
+    <!-- Add Book Form -->
+    <form id="add-book">
+      <input type="text" id="book-input" placeholder="Add a book..." />
+      <button type="submit">Add</button>
+    </form>
+
+    <!-- Hide Books -->
+    <label>
+      <input type="checkbox" id="hide"> Hide all books
+    </label>
+
+    <!-- Book List -->
+     <div id="book-list"> 
+    <ul>
+      <li><span class="name">The Hobbit</span><span class="delete">❌</span></li>
+      <li><span class="name">1984</span><span class="delete">❌</span></li>
+      <li><span class="name">The Alchemist</span><span class="delete">❌</span></li>
+    </ul>
+    </div>
+
+    <!-- Search -->
+    <input type="text" id="search" placeholder="Search books...">
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
